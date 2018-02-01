@@ -12,7 +12,6 @@ s2s.loadWeights()
 
 
 while True:
-
     text=input('>>')
     encoder_input_data = np.zeros ( (1 , max_encoder_seq_length , input_bits) , dtype='float32' )
     for t, char in enumerate(text):
