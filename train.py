@@ -13,7 +13,7 @@ target_character_index={}
 
 lines = open(data_path, 'r', encoding='utf-8').read().split('\n')
 
-
+epochs=500
 num_samples=10000
 
 for line in lines[: min(num_samples, len(lines) - 1)]:
@@ -66,4 +66,4 @@ parameters=[input_characters,target_characters,input_character_index,target_char
             max_encoder_seq_length,max_decoder_seq_length]
 pickle.dump(parameters,open('parameters.pkl', 'wb'))
 s2s=Seq2Seq(max_decoder_seq_length, target_character_index['\t'], input_bits=input_bits, output_bits=output_bits)
-s2s.trainModel(encoder_input_data,decoder_input_data,decoder_target_data,batch_size=100,epochs=10 )
+s2s.trainModel(encoder_input_data,decoder_input_data,decoder_target_data,batch_size=100,epochs=epochs )
