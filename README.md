@@ -9,8 +9,12 @@ clone it and run the train.py to train the model and use the test.py to test the
 ### Prerequisites
 
 python 3.6
-tensorflow>=1.3
+
+tensorflow>=1.4.1
+
 numpy
+
+h5py
 
 ### Installing
 
