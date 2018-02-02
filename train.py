@@ -2,7 +2,7 @@ import json
 import numpy as np
 from seq2seq import Seq2Seq
 import pickle
-data_path = 'Dataset/Bible/Bengali/combined.json'
+data_path = 'Dataset/Bible/Bengali/data.json'
 # Vectorize the data.
 input_texts = []
 target_texts = []
