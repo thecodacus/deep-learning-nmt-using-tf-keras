@@ -2,7 +2,7 @@ import json
 import numpy as np
 from seq2seq import Seq2Seq
 import pickle
-data_path = 'eng-jp.json'
+data_path = 'Dataset/Bible/Bengali/combined.json'
 # Vectorize the data.
 input_texts = []
 target_texts = []
@@ -14,9 +14,10 @@ target_character_index={}
 lines = open(data_path, 'r', encoding='utf-8').read().split('\n')
 
 epochs=500
-num_samples=10000
+num_samples=65021020
 
 for line in lines[: min(num_samples, len(lines) - 1)]:
+    line=line.strip('\n')
     line = json.loads(line)
     input_text = line['source']
     target_text = line['target']

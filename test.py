@@ -23,10 +23,10 @@ while True:
     out_index=np.argmax(out)
     outChar=target_characters[out_index]
     outsentense+=outChar
-    while outChar!='\n' or len(outsentense)<max_decoder_seq_length:
+    while str(outChar)!=str('\n') and len(outsentense)<max_decoder_seq_length:
         out = s2s.predictNext ( ) ;
         out_index = np.argmax ( out )
         outChar = target_characters[ out_index ]
         outsentense += outChar
-    print(outsentense)
+    print(str(outsentense))
 
