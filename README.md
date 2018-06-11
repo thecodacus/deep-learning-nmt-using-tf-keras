@@ -1,4 +1,4 @@
-# english-japanese-translater-tf-keras
+# english-bengali-translater-tf-keras
 
 Just a simple attempt to create a nueral translater using tensorflow seq2seq model. work in progress
 
