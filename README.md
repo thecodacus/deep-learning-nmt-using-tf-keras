@@ -23,8 +23,8 @@ A step by step series of examples that tell you have to get a development env ru
 clone the repo
 
 ```
-git clone https://github.com/thecodacus/english-japanese-translater-tf-keras.git
-cd english-japanese-translater-tf-keras
+git clone https://github.com/thecodacus/deep-learning-nmt-using-tf-keras.git
+cd deep-learning-nmt-using-tf-keras
 ```
 
 To Train 
